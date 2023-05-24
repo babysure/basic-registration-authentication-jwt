@@ -1,15 +1,17 @@
-package com.alibou.security;
+package com.universal.erp;
 
-import com.alibou.security.auth.AuthenticationService;
-import com.alibou.security.auth.RegisterRequest;
-import com.alibou.security.user.Role;
+
+
+import com.universal.erp.auth.AuthenticationService;
+import com.universal.erp.auth.RegisterRequest;
+import com.universal.erp.user.Role;
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import static com.alibou.security.user.Role.ADMIN;
-import static com.alibou.security.user.Role.MANAGER;
+
 
 @SpringBootApplication
 public class SecurityApplication {
@@ -28,7 +30,7 @@ public class SecurityApplication {
 					.lastname("Admin")
 					.email("admin@mail.com")
 					.password("password")
-					.role(ADMIN)
+					.role(Role.ADMIN)
 					.build();
 			System.out.println("Admin token: " + service.register(admin).getAccessToken());
 
@@ -37,7 +39,7 @@ public class SecurityApplication {
 					.lastname("Admin")
 					.email("manager@mail.com")
 					.password("password")
-					.role(MANAGER)
+					.role(Role.MANAGER)
 					.build();
 			System.out.println("Manager token: " + service.register(manager).getAccessToken());
 

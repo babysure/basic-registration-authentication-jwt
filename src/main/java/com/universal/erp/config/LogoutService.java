@@ -1,6 +1,6 @@
-package com.alibou.security.config;
+package com.universal.erp.config;
 
-import com.alibou.security.token.TokenRepository;
+
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
@@ -8,6 +8,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.logout.LogoutHandler;
 import org.springframework.stereotype.Service;
+
+import com.universal.erp.token.TokenRepository;
 
 @Service
 @RequiredArgsConstructor

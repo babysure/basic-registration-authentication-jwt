@@ -1,4 +1,4 @@
-package com.alibou.security.config;
+package com.universal.erp.config;
 
 import jakarta.servlet.Filter;
 import lombok.RequiredArgsConstructor;
@@ -16,16 +16,16 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.authentication.logout.LogoutHandler;
 
-import static com.alibou.security.user.Permission.ADMIN_CREATE;
-import static com.alibou.security.user.Permission.ADMIN_DELETE;
-import static com.alibou.security.user.Permission.ADMIN_READ;
-import static com.alibou.security.user.Permission.ADMIN_UPDATE;
-import static com.alibou.security.user.Permission.MANAGER_CREATE;
-import static com.alibou.security.user.Permission.MANAGER_DELETE;
-import static com.alibou.security.user.Permission.MANAGER_READ;
-import static com.alibou.security.user.Permission.MANAGER_UPDATE;
-import static com.alibou.security.user.Role.ADMIN;
-import static com.alibou.security.user.Role.MANAGER;
+import static com.universal.erp.user.Permission.ADMIN_CREATE;
+import static com.universal.erp.user.Permission.ADMIN_DELETE;
+import static com.universal.erp.user.Permission.ADMIN_READ;
+import static com.universal.erp.user.Permission.ADMIN_UPDATE;
+import static com.universal.erp.user.Permission.MANAGER_CREATE;
+import static com.universal.erp.user.Permission.MANAGER_DELETE;
+import static com.universal.erp.user.Permission.MANAGER_READ;
+import static com.universal.erp.user.Permission.MANAGER_UPDATE;
+import static com.universal.erp.user.Role.ADMIN;
+import static com.universal.erp.user.Role.MANAGER;
 import static org.springframework.http.HttpMethod.DELETE;
 import static org.springframework.http.HttpMethod.GET;
 import static org.springframework.http.HttpMethod.POST;

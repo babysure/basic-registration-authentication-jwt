@@ -1,4 +1,4 @@
-package com.alibou.security.demo;
+package com.universal.erp.demo;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

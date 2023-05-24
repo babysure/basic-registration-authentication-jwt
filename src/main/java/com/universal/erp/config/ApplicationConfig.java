@@ -1,6 +1,6 @@
-package com.alibou.security.config;
+package com.universal.erp.config;
 
-import com.alibou.security.user.UserRepository;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,6 +12,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+
+import com.universal.erp.user.UserRepository;
 
 @Configuration
 @RequiredArgsConstructor

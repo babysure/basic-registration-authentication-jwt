@@ -1,4 +1,4 @@
-package com.alibou.security.auth;
+package com.universal.erp.auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

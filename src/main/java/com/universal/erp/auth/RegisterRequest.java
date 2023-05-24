@@ -1,6 +1,8 @@
-package com.alibou.security.auth;
+package com.universal.erp.auth ; 
 
-import com.alibou.security.user.Role;
+import com.universal.erp.user.Role;
+
+//import com.alibou.security.user.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

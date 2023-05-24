@@ -1,16 +1,20 @@
-package com.alibou.security.auth;
+package com.universal.erp.auth;
 
-import com.alibou.security.config.JwtService;
-import com.alibou.security.token.Token;
-import com.alibou.security.token.TokenRepository;
-import com.alibou.security.token.TokenType;
-import com.alibou.security.user.Role;
-import com.alibou.security.user.User;
-import com.alibou.security.user.UserRepository;
+
+
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.universal.erp.config.JwtService;
+import com.universal.erp.token.Token;
+import com.universal.erp.token.TokenRepository;
+import com.universal.erp.token.TokenType;
+import com.universal.erp.user.User;
+import com.universal.erp.user.UserRepository;
+
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
+
+import org.springframework.data.crossstore.ChangeSetPersister.NotFoundException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -76,7 +80,7 @@ public class AuthenticationService {
         .expired(false)
         .revoked(false)
         .build();
-    tokenRepository.save(token);
+        tokenRepository.save(token);
   }
 
   private void revokeAllUserTokens(User user) {
